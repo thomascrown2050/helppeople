@@ -9,7 +9,17 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-console.log('hellofromappjs');
+
+app.get("/", function(req, res){
+  res.send("HELLO WORLD");
+  });
+
+  //3
+app.listen(3000, function(){
+  console.log("Application started and Listening on port 3000");
+  });
+
+// console.log('hellofromappjs');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
