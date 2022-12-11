@@ -13,11 +13,13 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+/*
 app.use(function () {
   console.log('hello')
   //console.log('Time: %d', Date.now())
   //next()
 })
+*/
 
 app.use(logger('dev'));
 app.use(express.json());
