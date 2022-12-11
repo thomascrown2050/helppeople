@@ -14,8 +14,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
 app.use(function () {
+  console.log('hello');
   //console.log('Time: %d', Date.now())
-  console.log('hellofren');
+  //next()
 })
 
 app.use(logger('dev'));
