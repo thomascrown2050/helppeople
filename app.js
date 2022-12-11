@@ -22,10 +22,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-app.use(function (req, res) {
-  console.log('hello')
-  //console.log('Time: %d', Date.now())
-  //next()
+app.use(function (req, res, next) {
+  console.log('Time: %d', Date.now())
+  next()
 })
 
 // catch 404 and forward to error handler
