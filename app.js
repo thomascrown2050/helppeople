@@ -12,10 +12,10 @@ var app = express();
 
 app.get("/", function(req, res){
   //res.send("HELLO WORLD12");
-  console.log("Application started and Listening on port 3000");
+  //console.log("Application started and Listening on port 3000");
   });
 
-console.log('hellofromappjs');
+//console.log('hellofromappjs');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
