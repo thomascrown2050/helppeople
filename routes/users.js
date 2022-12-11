@@ -8,8 +8,11 @@ router.get('/', function(req, res, next) {
 
 /* GET users listing. */
 router.get('/cool', function(req, res, next) {
- alert('he he');
-  // res.send('you are so cool');
+  res.render('cool',{
+    'title': 'cool'
+});
+  alert('he he');
+  res.send('you are so cool');
 });
 
 
