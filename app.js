@@ -15,7 +15,7 @@ app.get("/", function(req, res){
   });
 
   //3
-app.listen(3000, function(){
+app.listen(function(){
   console.log("Application started and Listening on port 3000");
   });
 
