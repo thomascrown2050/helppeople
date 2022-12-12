@@ -21,7 +21,7 @@ app.get('/user:address', (req, res) => {
   let responseText = 'Hello World!<br>'
   let userAddress = req.params.address
   responseText += `<small>Requested at: ${req.requestTime}</small>`
-  res.send(responseText)
+  res.send(responseText+"Address:"+userAddress)
 });
 
 app.listen(3000);
