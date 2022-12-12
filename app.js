@@ -17,9 +17,8 @@ const requestTime = function (req, res, next) {
 
 app.use(requestTime);
 
-app.get('/time:address', (req, res) => {
+app.get('/time', (req, res) => {
   let responseText = 'Hello World!<br>'
-  let userAddress = req.params.address
   responseText += `<small>Requested at: ${req.requestTime}</small>`
   res.send(responseText)
 });
